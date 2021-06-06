@@ -41,6 +41,7 @@ pipeline{
               ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: 'DOCKER_TAG=""', installation: 'ansible', inventory: 'dev.inv', playbook: 'deploy-docker.yml'
             }
        }
+    }
 }
 
 def getVersion(){
