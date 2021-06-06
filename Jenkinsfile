@@ -9,8 +9,8 @@ pipeline{
     stages{
         stage('SCM'){
             steps{
-                git credentialsId: 'github', 
-                    url: 'https://https://github.com/swapnapat/dockeransiblejenkins.git'
+                git credentialsId: 'githubcredential',
+                    url: 'https://github.com/swapnapat/dockeransiblejenkins'
             }
         }
         
